@@ -17,7 +17,7 @@ public class EditGadgetsServletView extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out=response.getWriter();
-        out.println("<h1>Update Phone</h1>");
+        out.println("<h1>Update Gadget</h1>");
         String sid=request.getParameter("id");
         int id=Integer.parseInt(sid);
 

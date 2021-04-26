@@ -23,7 +23,7 @@
 <jsp:useBean id="postList" type="java.util.List<kz.iitu.model.Post>" scope="request"/>
 <jsp:setProperty name="postList" property="*"/>
 
-<%@ include file="/common/navbar.jsp" %>
+<%@ include file="/navbar.jsp" %>
 <div class = "mb-5"></div>
 <div class="container">
     <div class="row">
@@ -76,11 +76,6 @@
         </div>
     </div>
 </div>
-<footer class="py-5 bg-dark">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Alim N 2021</p>
-    </div>
-    <!-- /.container -->
-</footer>
+<%@ include file="/footer.jsp" %>
 </body>
 </html>

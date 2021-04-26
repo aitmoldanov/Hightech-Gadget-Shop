@@ -14,7 +14,7 @@
 <body id="page-top">
 
 <!-- Navigation -->
-<%@ include file="/common/navbar.jsp" %>
+<%@ include file="/navbar.jsp" %>
 <<style>
     .btn:hover{
         font-size: 30px;

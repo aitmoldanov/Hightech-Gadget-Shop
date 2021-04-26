@@ -10,13 +10,12 @@
     <jsp:setProperty name="post" property="*"/>
 </head>
 <body>
-<%@include file="common/navbar.jsp" %>
+<%@include file="navbar.jsp" %>
 <div class="container mt-6" style="margin-bottom: 150px">
     <div class="row">
         <div class="col-md-8">
             <div class="post-content" style="padding: 50px">
                 <div class="post-container">
-                    <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="user" class="profile-photo-md pull-left">
                     <div class="post-detail">
                         <div class="user-info">
                             <h5><a href="#" class="profile-link"><%=post.getUser().getName()%></a> <span class="following">following</span></h5>
@@ -34,8 +33,8 @@
                         <% if (user.getName() == null) { %>
                         <form action="LikeServlet" method="get">
                             <div class="reaction">
-                                <a type="submit" href="common/Login.jsp" class="btn btn-outline-success"><i class="fa fa-thumbs-up"><%=post.getLike()%></i> </a>
-                                <a type="submit" href="common/Login.jsp" class="btn btn-outline-danger"><i class="fa fa-thumbs-down"><%=post.getDislike()%></i> </a>
+                                <a type="submit" href="Login.jsp" class="btn btn-outline-success"><i class="fa fa-thumbs-up"><%=post.getLike()%></i> </a>
+                                <a type="submit" href="Login.jsp" class="btn btn-outline-danger"><i class="fa fa-thumbs-down"><%=post.getDislike()%></i> </a>
                             </div>
                         </form>
                         <% } %>
@@ -46,7 +45,6 @@
                         <% for (Comment comment: post.getComments()) { %>
                         <div class="line-divider"></div>
                         <div class="post-comment">
-                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" class="profile-photo-sm">
                             <p><a href="#" class="profile-link"><%=comment.getUser().getName()%> </a><i class="em em-laughing"></i> <%=comment.getBody()%> </p>
                         </div>
                         <% } %>
@@ -74,12 +72,7 @@
         </div>
     </div>
 </div>
-<footer class="py-5 bg-dark">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Alim N 2021</p>
-    </div>
-    <!-- /.container -->
-</footer>
+<%@ include file="/footer.jsp" %>
 </body>
 </html>
 

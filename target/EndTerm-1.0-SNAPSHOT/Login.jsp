@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="/navbar.jsp" %>
+<%@ include file="/common/navbar.jspbar.jsp" %>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -19,6 +19,6 @@
         <button class="w-100 btn btn-lg btn-warning" type="submit" value="login">Sign in</button>
     </form>
 </main>
-
+<%@ include file="/footer.jsp" %>
 </body>
 </html>

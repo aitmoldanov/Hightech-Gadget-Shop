@@ -23,7 +23,7 @@
 <jsp:useBean id="postList" type="java.util.List<kz.iitu.model.Post>" scope="request"/>
 <jsp:setProperty name="postList" property="*"/>
 
-<%@ include file="/common/navbar.jsp" %>
+<%@ include file="/navbar.jsp" %>
 <div class = "mb-5"></div>
 <div class="container">
     <div class="row">

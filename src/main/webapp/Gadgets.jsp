@@ -16,7 +16,7 @@ s
 </head>
 <body>
 <!-- Navigation -->
-<%@ include file="/common/navbar.jsp" %>
+<%@ include file="/navbar.jsp" %>
 <%
     Connection con=null;
     try{
